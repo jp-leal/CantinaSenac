@@ -1,5 +1,9 @@
 public class TelaLogin : ITela
 {
+    public TelaLogin()
+    {
+        ExibirTela();
+    }
     public void ExibirTela()
     {
         string usuario;
@@ -9,5 +13,6 @@ public class TelaLogin : ITela
         usuario = Console.ReadLine();
         System.Console.WriteLine("Insira sua senha:");
         senha = Console.ReadLine();
+        new TelaFeedback().ExibirTela();
     }
 }
